@@ -1,3 +1,6 @@
+'''
+在代码"def do_GET(self)"中，“###”从上至下为"chat.html","script.js","styles.css"，使用时请加上相对路径，如"animals/chat.html".
+'''
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
@@ -6,11 +9,11 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        with open('FamilyWsb/chat.html', 'rb') as file:
+        with open('###', 'rb') as file:
             self.wfile.write(file.read())
-        with open('FamilyWsb/script.js', 'rb') as file:
+        with open('###', 'rb') as file:
             self.wfile.write(b'<script src="script.js"></script>')
-        with open('FamilyWsb/styles.css', 'rb') as file:
+        with open('###', 'rb') as file:
             self.wfile.write(b'<style>')
             self.wfile.write(file.read())
             self.wfile.write(b'</style>')
