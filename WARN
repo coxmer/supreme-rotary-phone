@@ -1,3 +1,0 @@
-请使用Python标准库运行SServer.py文件
-需要安装requrests库运行Python程序
-使用时请更改SServer.py中的路径名称和IPv4地址（会在文件中标识出来）
